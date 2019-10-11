@@ -1,0 +1,43 @@
+{
+  "cors": {
+    "origin": "*",
+    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "allowedHeaders": ["Authorization", "Content-Type", "X-Token-Header"],
+    "credentials": false,
+    "maxAge": 3600
+  },
+  "RateLimit": {
+    "max": 100,
+    "timeWindow": "1 minute"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "db": 0
+  },
+  "jwt": {
+    "secret": "supersecret",
+    "sign": {
+      "algorithm": "HS256",
+      "expiresIn": "10h",
+      "notBefore": "120ms",
+      "audience": "http://localhost:3000",
+      "issuer": "http://localhost:3000"
+    },
+    "verify": {
+      "audience": "http://localhost:3000",
+      "issuer": "http://localhost:3000"
+    }
+  },
+  "authdb": {
+    "name": "authdb-async"
+  },
+  "soap_client": {
+    "url": ""
+  },
+  "httpProxy": {
+    "upstream": "http://app-backend.api.com",
+    "prefix": "/api",
+    "http2": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "smart-card-th",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@privageapp/thai-national-id-reader": "^1.0.3",
+    "axios": "^0.18.0",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^8.5.0",
+    "legacy-encoding": "^3.0.0",
+    "pcsclite": "^0.5.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
