@@ -10,7 +10,7 @@
     "test": "tap test/**/*.test.js",
     "serve": "fastify start -l info app.js",
     "dev": "fastify start -l info -P app.js",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
