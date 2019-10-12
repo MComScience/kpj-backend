@@ -101,14 +101,14 @@ app.register(require("./app.js"))
 
 // Start listening.
 app.listen(
-  { port: process.env.PORT || 3000, host: process.env.BASE_URL },
+  { port: process.env.PORT || 3000, host: process.env.HOST },
   err => {
     if (err) {
       app.log.error(err)
       process.exit(1)
     }
     console.log(
-      `Server listenting at http://${process.env.BASE_URL}:${
+      `Server listenting at http://${process.env.HOST}:${
         app.server.address().port
       }`
     )

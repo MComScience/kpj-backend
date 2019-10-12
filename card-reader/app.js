@@ -1,6 +1,6 @@
 //const { ThaiCardReader, EVENTS, MODE } = require('@privageapp/thai-national-id-reader');
 const { ThaiCardReader, EVENTS, MODE } = require("./lib/index");
-const BASE_URL = "http://192.168.1.2:3000";
+const BASE_URL = "http://192.168.1.13:3000";
 const io = require("socket.io-client");
 const socket = io(BASE_URL);
 const KIOSK_ID = "1";

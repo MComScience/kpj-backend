@@ -21,7 +21,7 @@ const fastifyStatic = require("fastify-static")
 
 const config = require("./config")
 const decorateFastifyInstance = require("./decorators/index")
-const host = `${process.env.BASE_URL}:${process.env.PORT}`
+const host = `${process.env.HOST}:${process.env.PORT}`
 const jwtSign = Object.assign(config.jwt.sign, {
   audience: host,
   issuer: host
