@@ -21,7 +21,7 @@ module.exports = fp(function(fastify, opts, next) {
       )
     })
     .decorate("timestamp", function() {
-      return Math.floor(moment().format("YYYY-MM-DD HH:mm:ss") / 1000)
+      return Math.floor(moment().valueOf() / 1000)
     })
     .decorate("getDateNow", function() {
       return moment().format("YYYY-MM-DD HH:mm:ss")
