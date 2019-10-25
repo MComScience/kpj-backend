@@ -46,10 +46,10 @@ module.exports = async function(fastify, opts) {
   fastify.route({
     method: "GET",
     url: "/right/:cid",
-    preHandler: fastify.auth([
-      // fastify.authPreHandler,
-      fastify.authRightPreHandler
-    ]),
+    // preHandler: fastify.auth([
+    //   // fastify.authPreHandler,
+    //   fastify.authRightPreHandler
+    // ]),
     handler: rightHandler
   })
   // บล็อคผู้ใช้งาน
