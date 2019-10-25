@@ -160,7 +160,7 @@ async function getKioskHandler(req, reply) {
     const date1 = new Date(moment().format("DD/MM/YYYY HH:mm:ss")) // current time
     const date2 = new Date(moment().format("DD/MM/YYYY 23:59:59")) // end time of the day
     const hours = Math.abs(date1 - date2) / 36e5
-    const expiresIn = Math.floor(Date.now() / 1000) + 60 * 60 * hours //
+    const expiresIn = Math.floor(moment().valueOf() / 1000) + 60 * 60 * hours //
     const signData = {
       exp: expiresIn,
       data: kiosk
